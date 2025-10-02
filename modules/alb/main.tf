@@ -6,8 +6,7 @@ resource "aws_lb" "alb" {
   security_groups    = [var.sg_id]
   subnets            = var.subnets
 
-  enable_deletion_protection = true
-
+  enable_deletion_protection = false
   tags = {
     Environment = "development"
   }
